@@ -62,7 +62,15 @@ body {
 }
 .envelope:hover .top {
   transform: rotateX(160deg);
+  /* transition: 1s; */
+  
 }
+.envelope:hover .letter {
+  transform: translateY(-120px);
+  z-index: 2;
+ transition: 2s;
+}
+
 .letter {
   position: absolute;
   background: white;
@@ -72,10 +80,7 @@ body {
   left: 10px;
   transition: 0.2s;
 }
-.envelope:hover .letter {
-  transform: translateY(-100px);
-  z-index: 2;
-}
+
 .text1 {
   position: absolute;
   text-align: center;
